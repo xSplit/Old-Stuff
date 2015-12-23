@@ -8,10 +8,6 @@ using System.IO;
  
 namespace Tester
 {
-    /*
-     * Coded by Sam
-     */
- 
     /// <summary>
     /// Crypto class
     /// </summary>
