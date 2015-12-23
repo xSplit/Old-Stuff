@@ -9,10 +9,6 @@ using System.Threading.Tasks;
  
 namespace MemoryManager
 {
-    /*
-     *  Developed by Sam (xSplit)
-     */
- 
     abstract class PInvokeProcess
     {
         [DllImport("kernel32.dll", SetLastError = true)]
