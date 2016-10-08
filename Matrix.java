@@ -11,18 +11,15 @@ public class Matrix {
  
     public Matrix(int[][] matrixArray){
         matrix = new int[matrixArray.length][];
-        for (int i = 0; i < matrixArray.length; i++) {
+        for (int i = 0; i < matrixArray.length; i++)
             matrix[i] = Arrays.copyOf(matrixArray[i], matrixArray[i].length);
-        }
     }
  
     private void populatematrix(int min, int max){
         Random rand = new Random();
-        for(int i = 0; i < matrix.length; i++){
-            for(int j = 0; j < matrix[0].length; j++){
+        for(int i = 0; i < matrix.length; i++)
+            for(int j = 0; j < matrix[0].length; j++)
                 matrix[i][j] = rand.nextInt((max - min) + 1) + min;
-            }
-        }
     }
  
     public Matrix add(Matrix otherMatrix){
